@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug"
+			"value" : "c:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet"
+			"value" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/install/x64-Debug"
+			"value" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/install/x64-Debug"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -711,7 +711,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "SAE921-GRP4100-Box2D"
+			"value" : "SAE921-GRP4100-Sommative-Box2D-AidanCuennet"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug"
+			"value" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug"
 		},
 		{
 			"name" : "SAE921-GRP4100-Box2D_SOURCE_DIR",
@@ -1135,7 +1135,31 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet"
+			"value" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet"
+		},
+		{
+			"name" : "SAE921-GRP4100-Sommative-Box2D-AidanCuennet_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug"
+		},
+		{
+			"name" : "SAE921-GRP4100-Sommative-Box2D-AidanCuennet_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet"
 		},
 		{
 			"name" : "SFML_DIR",

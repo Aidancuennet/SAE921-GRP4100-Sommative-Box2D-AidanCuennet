@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\03-BouncingAdvanced",
-    "\\03-BouncingAdvanced\\include",
-    "\\03-BouncingAdvanced\\src",
     "\\sommative-Box2D",
     "\\sommative-Box2D\\include",
     "\\sommative-Box2D\\src"
   ],
+  "SelectedNode": "\\sommative-Box2D\\src\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

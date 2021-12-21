@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/sommative-Box2D
+# Install script for directory: C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
