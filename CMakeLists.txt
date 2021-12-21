@@ -1,13 +1,13 @@
-﻿# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
+# CMakeList.txt : fichier projet CMake de niveau supérieur, effectuez une configuration globale
+# et incluez les sous-projets ici.
 #
 cmake_minimum_required (VERSION 3.8)
 
-# Name of the solution
-# TODO: Rename solution
-project ("solution-name")
+# Solution
+project ("SAE921-GRP4100-Sommative-Box2D-AidanCuennet")
+message("SOLUTION/PROJECT CMAKING " ${CMAKE_PROJECT_NAME})
 
-# Include sub-projects.
-# TODO: Rename project
-set(EXECUTABLE_CUSTOM_NAME "project-name")
-add_subdirectory ("project-name")
+# Each sub-project
+set(EXECUTABLE_CUSTOM_NAME "sommative-Box2D")
+add_subdirectory ("sommative-Box2D")
+
