@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: SAE921-GRP4100-Sommative-Box2D-AidanCuennet
+# Project: SAE921-GRP4100-Box2D
 # Configurations: Debug
 # =============================================================================
 
@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -50,7 +50,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -59,14 +59,500 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/CMakeLists.txt
+# C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for DataTarget-00-Starter
+
+build 00-Starter\DataTarget-00-Starter: phony
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 00-Starter
+
+
+#############################################
+# Order-only phony target for 00-Starter
+
+build cmake_object_order_depends_target_00-Starter: phony || 00-Starter\DataTarget-00-Starter
+
+build 00-Starter\CMakeFiles\00-Starter.dir\src\main.cpp.obj: CXX_COMPILER__00-Starter_Debug ..\..\..\00-Starter\src\main.cpp || cmake_object_order_depends_target_00-Starter
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\00-Starter\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 00-Starter\CMakeFiles\00-Starter.dir
+  OBJECT_FILE_DIR = 00-Starter\CMakeFiles\00-Starter.dir\src
+  TARGET_COMPILE_PDB = 00-Starter\CMakeFiles\00-Starter.dir\
+  TARGET_PDB = 00-Starter\00-Starter.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 00-Starter
+
+
+#############################################
+# Link the executable 00-Starter\00-Starter.exe
+
+build 00-Starter\00-Starter.exe: CXX_EXECUTABLE_LINKER__00-Starter_Debug 00-Starter\CMakeFiles\00-Starter.dir\src\main.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || 00-Starter\DataTarget-00-Starter
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = 00-Starter\CMakeFiles\00-Starter.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\00-Starter && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/00-Starter/00-Starter.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = 00-Starter\CMakeFiles\00-Starter.dir\
+  TARGET_FILE = 00-Starter\00-Starter.exe
+  TARGET_IMPLIB = 00-Starter\00-Starter.lib
+  TARGET_PDB = 00-Starter\00-Starter.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build 00-Starter\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\00-Starter && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 00-Starter\edit_cache: phony 00-Starter\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 00-Starter\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\00-Starter && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 00-Starter\rebuild_cache: phony 00-Starter\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for DataTarget-01-Gravity
+
+build 01-Gravity\DataTarget-01-Gravity: phony
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 01-Gravity\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\01-Gravity && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 01-Gravity\rebuild_cache: phony 01-Gravity\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01-Gravity
+
+
+#############################################
+# Order-only phony target for 01-Gravity
+
+build cmake_object_order_depends_target_01-Gravity: phony || 01-Gravity\DataTarget-01-Gravity
+
+build 01-Gravity\CMakeFiles\01-Gravity.dir\src\ball.cpp.obj: CXX_COMPILER__01-Gravity_Debug ..\..\..\01-Gravity\src\ball.cpp || cmake_object_order_depends_target_01-Gravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\01-Gravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir
+  OBJECT_FILE_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir\src
+  TARGET_COMPILE_PDB = 01-Gravity\CMakeFiles\01-Gravity.dir\
+  TARGET_PDB = 01-Gravity\01-Gravity.pdb
+
+build 01-Gravity\CMakeFiles\01-Gravity.dir\src\game.cpp.obj: CXX_COMPILER__01-Gravity_Debug ..\..\..\01-Gravity\src\game.cpp || cmake_object_order_depends_target_01-Gravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\01-Gravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir
+  OBJECT_FILE_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir\src
+  TARGET_COMPILE_PDB = 01-Gravity\CMakeFiles\01-Gravity.dir\
+  TARGET_PDB = 01-Gravity\01-Gravity.pdb
+
+build 01-Gravity\CMakeFiles\01-Gravity.dir\src\main.cpp.obj: CXX_COMPILER__01-Gravity_Debug ..\..\..\01-Gravity\src\main.cpp || cmake_object_order_depends_target_01-Gravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\01-Gravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir
+  OBJECT_FILE_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir\src
+  TARGET_COMPILE_PDB = 01-Gravity\CMakeFiles\01-Gravity.dir\
+  TARGET_PDB = 01-Gravity\01-Gravity.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01-Gravity
+
+
+#############################################
+# Link the executable 01-Gravity\01-Gravity.exe
+
+build 01-Gravity\01-Gravity.exe: CXX_EXECUTABLE_LINKER__01-Gravity_Debug 01-Gravity\CMakeFiles\01-Gravity.dir\src\ball.cpp.obj 01-Gravity\CMakeFiles\01-Gravity.dir\src\game.cpp.obj 01-Gravity\CMakeFiles\01-Gravity.dir\src\main.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || 01-Gravity\DataTarget-01-Gravity
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = 01-Gravity\CMakeFiles\01-Gravity.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\01-Gravity && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/01-Gravity/01-Gravity.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = 01-Gravity\CMakeFiles\01-Gravity.dir\
+  TARGET_FILE = 01-Gravity\01-Gravity.exe
+  TARGET_IMPLIB = 01-Gravity\01-Gravity.lib
+  TARGET_PDB = 01-Gravity\01-Gravity.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build 01-Gravity\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\01-Gravity && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 01-Gravity\edit_cache: phony 01-Gravity\CMakeFiles\edit_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for DataTarget-02-Bouncing
+
+build 02-Bouncing\DataTarget-02-Bouncing: phony
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 02-Bouncing
+
+
+#############################################
+# Order-only phony target for 02-Bouncing
+
+build cmake_object_order_depends_target_02-Bouncing: phony || 02-Bouncing\DataTarget-02-Bouncing
+
+build 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\ball.cpp.obj: CXX_COMPILER__02-Bouncing_Debug ..\..\..\02-Bouncing\src\ball.cpp || cmake_object_order_depends_target_02-Bouncing
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\02-Bouncing\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir
+  OBJECT_FILE_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir\src
+  TARGET_COMPILE_PDB = 02-Bouncing\CMakeFiles\02-Bouncing.dir\
+  TARGET_PDB = 02-Bouncing\02-Bouncing.pdb
+
+build 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\bouncer.cpp.obj: CXX_COMPILER__02-Bouncing_Debug ..\..\..\02-Bouncing\src\bouncer.cpp || cmake_object_order_depends_target_02-Bouncing
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\02-Bouncing\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir
+  OBJECT_FILE_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir\src
+  TARGET_COMPILE_PDB = 02-Bouncing\CMakeFiles\02-Bouncing.dir\
+  TARGET_PDB = 02-Bouncing\02-Bouncing.pdb
+
+build 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\game.cpp.obj: CXX_COMPILER__02-Bouncing_Debug ..\..\..\02-Bouncing\src\game.cpp || cmake_object_order_depends_target_02-Bouncing
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\02-Bouncing\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir
+  OBJECT_FILE_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir\src
+  TARGET_COMPILE_PDB = 02-Bouncing\CMakeFiles\02-Bouncing.dir\
+  TARGET_PDB = 02-Bouncing\02-Bouncing.pdb
+
+build 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\main.cpp.obj: CXX_COMPILER__02-Bouncing_Debug ..\..\..\02-Bouncing\src\main.cpp || cmake_object_order_depends_target_02-Bouncing
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\02-Bouncing\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir
+  OBJECT_FILE_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir\src
+  TARGET_COMPILE_PDB = 02-Bouncing\CMakeFiles\02-Bouncing.dir\
+  TARGET_PDB = 02-Bouncing\02-Bouncing.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 02-Bouncing
+
+
+#############################################
+# Link the executable 02-Bouncing\02-Bouncing.exe
+
+build 02-Bouncing\02-Bouncing.exe: CXX_EXECUTABLE_LINKER__02-Bouncing_Debug 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\ball.cpp.obj 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\bouncer.cpp.obj 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\game.cpp.obj 02-Bouncing\CMakeFiles\02-Bouncing.dir\src\main.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || 02-Bouncing\DataTarget-02-Bouncing
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = 02-Bouncing\CMakeFiles\02-Bouncing.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\02-Bouncing && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/02-Bouncing/02-Bouncing.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = 02-Bouncing\CMakeFiles\02-Bouncing.dir\
+  TARGET_FILE = 02-Bouncing\02-Bouncing.exe
+  TARGET_IMPLIB = 02-Bouncing\02-Bouncing.lib
+  TARGET_PDB = 02-Bouncing\02-Bouncing.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build 02-Bouncing\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\02-Bouncing && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 02-Bouncing\edit_cache: phony 02-Bouncing\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 02-Bouncing\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\02-Bouncing && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 02-Bouncing\rebuild_cache: phony 02-Bouncing\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for DataTarget-03-BouncingAdvanced
+
+build 03-BouncingAdvanced\DataTarget-03-BouncingAdvanced: phony
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 03-BouncingAdvanced
+
+
+#############################################
+# Order-only phony target for 03-BouncingAdvanced
+
+build cmake_object_order_depends_target_03-BouncingAdvanced: phony || 03-BouncingAdvanced\DataTarget-03-BouncingAdvanced
+
+build 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\ball.cpp.obj: CXX_COMPILER__03-BouncingAdvanced_Debug ..\..\..\03-BouncingAdvanced\src\ball.cpp || cmake_object_order_depends_target_03-BouncingAdvanced
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\03-BouncingAdvanced\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir
+  OBJECT_FILE_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src
+  TARGET_COMPILE_PDB = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\
+  TARGET_PDB = 03-BouncingAdvanced\03-BouncingAdvanced.pdb
+
+build 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\bouncer.cpp.obj: CXX_COMPILER__03-BouncingAdvanced_Debug ..\..\..\03-BouncingAdvanced\src\bouncer.cpp || cmake_object_order_depends_target_03-BouncingAdvanced
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\03-BouncingAdvanced\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir
+  OBJECT_FILE_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src
+  TARGET_COMPILE_PDB = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\
+  TARGET_PDB = 03-BouncingAdvanced\03-BouncingAdvanced.pdb
+
+build 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\game.cpp.obj: CXX_COMPILER__03-BouncingAdvanced_Debug ..\..\..\03-BouncingAdvanced\src\game.cpp || cmake_object_order_depends_target_03-BouncingAdvanced
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\03-BouncingAdvanced\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir
+  OBJECT_FILE_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src
+  TARGET_COMPILE_PDB = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\
+  TARGET_PDB = 03-BouncingAdvanced\03-BouncingAdvanced.pdb
+
+build 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\main.cpp.obj: CXX_COMPILER__03-BouncingAdvanced_Debug ..\..\..\03-BouncingAdvanced\src\main.cpp || cmake_object_order_depends_target_03-BouncingAdvanced
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\03-BouncingAdvanced\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir
+  OBJECT_FILE_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src
+  TARGET_COMPILE_PDB = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\
+  TARGET_PDB = 03-BouncingAdvanced\03-BouncingAdvanced.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03-BouncingAdvanced
+
+
+#############################################
+# Link the executable 03-BouncingAdvanced\03-BouncingAdvanced.exe
+
+build 03-BouncingAdvanced\03-BouncingAdvanced.exe: CXX_EXECUTABLE_LINKER__03-BouncingAdvanced_Debug 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\ball.cpp.obj 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\bouncer.cpp.obj 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\game.cpp.obj 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\src\main.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || 03-BouncingAdvanced\DataTarget-03-BouncingAdvanced
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\03-BouncingAdvanced && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/03-BouncingAdvanced/03-BouncingAdvanced.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = 03-BouncingAdvanced\CMakeFiles\03-BouncingAdvanced.dir\
+  TARGET_FILE = 03-BouncingAdvanced\03-BouncingAdvanced.exe
+  TARGET_IMPLIB = 03-BouncingAdvanced\03-BouncingAdvanced.lib
+  TARGET_PDB = 03-BouncingAdvanced\03-BouncingAdvanced.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build 03-BouncingAdvanced\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\03-BouncingAdvanced && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 03-BouncingAdvanced\edit_cache: phony 03-BouncingAdvanced\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 03-BouncingAdvanced\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\03-BouncingAdvanced && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 03-BouncingAdvanced\rebuild_cache: phony 03-BouncingAdvanced\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for DataTarget-04-ZeroGravity
+
+build 04-ZeroGravity\DataTarget-04-ZeroGravity: phony
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 04-ZeroGravity
+
+
+#############################################
+# Order-only phony target for 04-ZeroGravity
+
+build cmake_object_order_depends_target_04-ZeroGravity: phony || 04-ZeroGravity\DataTarget-04-ZeroGravity
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\SFML_Utilities.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\SFML_Utilities.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\ball.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\ball.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\bouncer.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\bouncer.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\contact_listener.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\contact_listener.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\game.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\game.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\main.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\main.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+build 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\mySensor.cpp.obj: CXX_COMPILER__04-ZeroGravity_Debug ..\..\..\04-ZeroGravity\src\mySensor.cpp || cmake_object_order_depends_target_04-ZeroGravity
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\04-ZeroGravity\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  OBJECT_FILE_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 04-ZeroGravity
+
+
+#############################################
+# Link the executable 04-ZeroGravity\04-ZeroGravity.exe
+
+build 04-ZeroGravity\04-ZeroGravity.exe: CXX_EXECUTABLE_LINKER__04-ZeroGravity_Debug 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\SFML_Utilities.cpp.obj 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\ball.cpp.obj 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\bouncer.cpp.obj 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\contact_listener.cpp.obj 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\game.cpp.obj 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\main.cpp.obj 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\src\mySensor.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || 04-ZeroGravity\DataTarget-04-ZeroGravity
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\04-ZeroGravity && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/04-ZeroGravity/04-ZeroGravity.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = 04-ZeroGravity\CMakeFiles\04-ZeroGravity.dir\
+  TARGET_FILE = 04-ZeroGravity\04-ZeroGravity.exe
+  TARGET_IMPLIB = 04-ZeroGravity\04-ZeroGravity.lib
+  TARGET_PDB = 04-ZeroGravity\04-ZeroGravity.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build 04-ZeroGravity\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\04-ZeroGravity && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 04-ZeroGravity\edit_cache: phony 04-ZeroGravity\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 04-ZeroGravity\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\04-ZeroGravity && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 04-ZeroGravity\rebuild_cache: phony 04-ZeroGravity\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for DataTarget-sommative-Box2D
 
-build sommative-Box2D\DataTarget-sommative-Box2D: phony sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D sommative-Box2D\data\.gitkeep sommative-Box2D\data\BG_2.png sommative-Box2D\data\BG_6.png sommative-Box2D\data\BG_8.png sommative-Box2D\data\Space$ Background.png sommative-Box2D\data\Terran.png
+build sommative-Box2D\DataTarget-sommative-Box2D: phony sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D sommative-Box2D\data\BG_2.png sommative-Box2D\data\BG_6.png sommative-Box2D\data\BG_8.png sommative-Box2D\data\Space$ Background.png sommative-Box2D\data\Terran.png
 
 # =============================================================================
 # Object build statements for EXECUTABLE target sommative-Box2D
@@ -135,7 +621,7 @@ build sommative-Box2D\sommative-Box2D.exe: CXX_EXECUTABLE_LINKER__sommative-Box2
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
-  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/sommative-Box2D.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/coyli/OneDrive/Documents/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/sommative-Box2D.exe -installedDir C:/Users/coyli/OneDrive/Documents/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
   TARGET_FILE = sommative-Box2D\sommative-Box2D.exe
@@ -147,7 +633,7 @@ build sommative-Box2D\sommative-Box2D.exe: CXX_EXECUTABLE_LINKER__sommative-Box2
 # Utility command for edit_cache
 
 build sommative-Box2D\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -158,7 +644,7 @@ build sommative-Box2D\edit_cache: phony sommative-Box2D\CMakeFiles\edit_cache.ut
 # Utility command for rebuild_cache
 
 build sommative-Box2D\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet -BC:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -169,23 +655,14 @@ build sommative-Box2D\rebuild_cache: phony sommative-Box2D\CMakeFiles\rebuild_ca
 #############################################
 # Phony custom command for sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D
 
-build sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D: phony sommative-Box2D\data\.gitkeep sommative-Box2D\data\BG_2.png sommative-Box2D\data\BG_6.png sommative-Box2D\data\BG_8.png sommative-Box2D\data\Space$ Background.png sommative-Box2D\data\Terran.png ..\..\..\sommative-Box2D\data\.gitkeep ..\..\..\sommative-Box2D\data\BG_2.png ..\..\..\sommative-Box2D\data\BG_6.png ..\..\..\sommative-Box2D\data\BG_8.png ..\..\..\sommative-Box2D\data\Space$ Background.png ..\..\..\sommative-Box2D\data\Terran.png
-
-
-#############################################
-# Custom command for sommative-Box2D\data\.gitkeep
-
-build sommative-Box2D\data\.gitkeep: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\.gitkeep
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/.gitkeep C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/.gitkeep"
-  DESC = Generating data/.gitkeep
-  restat = 1
+build sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D: phony sommative-Box2D\data\BG_2.png sommative-Box2D\data\BG_6.png sommative-Box2D\data\BG_8.png sommative-Box2D\data\Space$ Background.png sommative-Box2D\data\Terran.png ..\..\..\sommative-Box2D\data\BG_2.png ..\..\..\sommative-Box2D\data\BG_6.png ..\..\..\sommative-Box2D\data\BG_8.png ..\..\..\sommative-Box2D\data\Space$ Background.png ..\..\..\sommative-Box2D\data\Terran.png
 
 
 #############################################
 # Custom command for sommative-Box2D\data\BG_2.png
 
 build sommative-Box2D\data\BG_2.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\BG_2.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/BG_2.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_2.png"
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/sommative-Box2D/data/BG_2.png C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_2.png"
   DESC = Generating data/BG_2.png
   restat = 1
 
@@ -194,7 +671,7 @@ build sommative-Box2D\data\BG_2.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\dat
 # Custom command for sommative-Box2D\data\BG_6.png
 
 build sommative-Box2D\data\BG_6.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\BG_6.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/BG_6.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_6.png"
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/sommative-Box2D/data/BG_6.png C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_6.png"
   DESC = Generating data/BG_6.png
   restat = 1
 
@@ -203,7 +680,7 @@ build sommative-Box2D\data\BG_6.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\dat
 # Custom command for sommative-Box2D\data\BG_8.png
 
 build sommative-Box2D\data\BG_8.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\BG_8.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/BG_8.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_8.png"
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/sommative-Box2D/data/BG_8.png C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_8.png"
   DESC = Generating data/BG_8.png
   restat = 1
 
@@ -212,7 +689,7 @@ build sommative-Box2D\data\BG_8.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\dat
 # Custom command for sommative-Box2D\data\Space Background.png
 
 build sommative-Box2D\data\Space$ Background.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\Space$ Background.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/Space Background.png" "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Space Background.png""
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/sommative-Box2D/data/Space Background.png" "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Space Background.png""
   DESC = Generating data/Space Background.png
   restat = 1
 
@@ -221,12 +698,42 @@ build sommative-Box2D\data\Space$ Background.png: CUSTOM_COMMAND ..\..\..\sommat
 # Custom command for sommative-Box2D\data\Terran.png
 
 build sommative-Box2D\data\Terran.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\Terran.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/Terran.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Terran.png"
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/sommative-Box2D/data/Terran.png C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Terran.png"
   DESC = Generating data/Terran.png
   restat = 1
 
 # =============================================================================
 # Target aliases.
+
+build 00-Starter: phony 00-Starter\00-Starter.exe
+
+build 00-Starter.exe: phony 00-Starter\00-Starter.exe
+
+build 01-Gravity: phony 01-Gravity\01-Gravity.exe
+
+build 01-Gravity.exe: phony 01-Gravity\01-Gravity.exe
+
+build 02-Bouncing: phony 02-Bouncing\02-Bouncing.exe
+
+build 02-Bouncing.exe: phony 02-Bouncing\02-Bouncing.exe
+
+build 03-BouncingAdvanced: phony 03-BouncingAdvanced\03-BouncingAdvanced.exe
+
+build 03-BouncingAdvanced.exe: phony 03-BouncingAdvanced\03-BouncingAdvanced.exe
+
+build 04-ZeroGravity: phony 04-ZeroGravity\04-ZeroGravity.exe
+
+build 04-ZeroGravity.exe: phony 04-ZeroGravity\04-ZeroGravity.exe
+
+build DataTarget-00-Starter: phony 00-Starter\DataTarget-00-Starter
+
+build DataTarget-01-Gravity: phony 01-Gravity\DataTarget-01-Gravity
+
+build DataTarget-02-Bouncing: phony 02-Bouncing\DataTarget-02-Bouncing
+
+build DataTarget-03-BouncingAdvanced: phony 03-BouncingAdvanced\DataTarget-03-BouncingAdvanced
+
+build DataTarget-04-ZeroGravity: phony 04-ZeroGravity\DataTarget-04-ZeroGravity
 
 build DataTarget-sommative-Box2D: phony sommative-Box2D\DataTarget-sommative-Box2D
 
@@ -240,14 +747,49 @@ build sommative-Box2D.exe: phony sommative-Box2D\sommative-Box2D.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug
 
-build all: phony sommative-Box2D\all
+build all: phony 00-Starter\all 01-Gravity\all 02-Bouncing\all 03-BouncingAdvanced\all 04-ZeroGravity\all sommative-Box2D\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/00-Starter
+
+build 00-Starter\all: phony 00-Starter\00-Starter.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/01-Gravity
+
+build 01-Gravity\all: phony 01-Gravity\01-Gravity.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/02-Bouncing
+
+build 02-Bouncing\all: phony 02-Bouncing\02-Bouncing.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/03-BouncingAdvanced
+
+build 03-BouncingAdvanced\all: phony 03-BouncingAdvanced\03-BouncingAdvanced.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/04-ZeroGravity
+
+build 04-ZeroGravity\all: phony 04-ZeroGravity\04-ZeroGravity.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D
 
 build sommative-Box2D\all: phony sommative-Box2D\sommative-Box2D.exe
 
@@ -258,14 +800,14 @@ build sommative-Box2D\all: phony sommative-Box2D\sommative-Box2D.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\sommative-Box2D\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\00-Starter\CMakeLists.txt ..\..\..\01-Gravity\CMakeLists.txt ..\..\..\02-Bouncing\CMakeLists.txt ..\..\..\03-BouncingAdvanced\CMakeLists.txt ..\..\..\04-ZeroGravity\CMakeLists.txt ..\..\..\CMakeLists.txt ..\..\..\sommative-Box2D\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\sommative-Box2D\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\00-Starter\CMakeLists.txt ..\..\..\01-Gravity\CMakeLists.txt ..\..\..\02-Bouncing\CMakeLists.txt ..\..\..\03-BouncingAdvanced\CMakeLists.txt ..\..\..\04-ZeroGravity\CMakeLists.txt ..\..\..\CMakeLists.txt ..\..\..\sommative-Box2D\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake C$:\Users\coyli\OneDrive\Documents\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

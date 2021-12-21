@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet
+# Install script for directory: C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/cmake_install.cmake")
+  include("C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/00-Starter/cmake_install.cmake")
+  include("C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/01-Gravity/cmake_install.cmake")
+  include("C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/02-Bouncing/cmake_install.cmake")
+  include("C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/03-BouncingAdvanced/cmake_install.cmake")
+  include("C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/04-ZeroGravity/cmake_install.cmake")
+  include("C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/coyli/SAE921-GRP4100-Box2D-AidanCuennet/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
