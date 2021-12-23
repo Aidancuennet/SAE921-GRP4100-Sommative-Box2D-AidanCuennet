@@ -17,7 +17,7 @@ void Ball::init() {
 	shape.setRadius(24.0f);
     TextureManager* texManager = TextureManager::Instance();
     m_sprite.setTexture(texManager->getEarthTexture());
-    m_earth.setOrigin(texManager->getEarthTexture().getSize().x * 0.0f, texManager->getEarthTexture().getSize().y * 0.0f);
+    m_sprite.setOrigin(texManager->getEarthTexture().getSize().x * 0.0f, texManager->getEarthTexture().getSize().y * 0.0f);
 
     // Defing the box 2D elements
     b2BodyDef bodyDef;

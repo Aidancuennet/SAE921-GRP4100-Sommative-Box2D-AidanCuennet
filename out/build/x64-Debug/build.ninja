@@ -113,6 +113,15 @@ build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\main.cpp.obj: CXX_COMPI
   TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
   TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
 
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\placedBouncer.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\placedBouncer.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
 build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\textureManager.cpp || cmake_object_order_depends_target_sommative-Box2D
   DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
@@ -130,7 +139,7 @@ build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj:
 #############################################
 # Link the executable sommative-Box2D\sommative-Box2D.exe
 
-build sommative-Box2D\sommative-Box2D.exe: CXX_EXECUTABLE_LINKER__sommative-Box2D_Debug sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\ball.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\bouncer.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\game.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\main.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || sommative-Box2D\DataTarget-sommative-Box2D
+build sommative-Box2D\sommative-Box2D.exe: CXX_EXECUTABLE_LINKER__sommative-Box2D_Debug sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\ball.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\bouncer.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\game.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\main.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\placedBouncer.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || sommative-Box2D\DataTarget-sommative-Box2D
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

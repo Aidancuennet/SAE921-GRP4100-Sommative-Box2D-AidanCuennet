@@ -28,12 +28,16 @@ public:
 private:
 
 	
+	
 	// The window ---------------------------------------------
 	sf::RenderWindow window_;
 
 	// The physical world -------------------------------------
 	b2World world_{ b2Vec2(0.0f, -9.81f) };
 
+
+	sf::Vector2f mousePressedPos_bouncer, mouseReleasedPos_bouncer;
+	sf::Vector2f mousePressedPos_ball, mouseReleasedPos_ball;
 	sf::Sprite m_sprite;
 	void addBouncer(sf::Vector2f centre, float angle, float size);
 	Ball theBall;

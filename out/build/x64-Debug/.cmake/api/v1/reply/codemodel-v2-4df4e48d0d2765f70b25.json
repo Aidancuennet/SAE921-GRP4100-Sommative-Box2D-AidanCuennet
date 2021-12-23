@@ -1,0 +1,83 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "sommative-Box2D",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sommative-Box2D",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "SAE921-GRP4100-Sommative-Box2D-AidanCuennet",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "DataTarget-sommative-Box2D::@460b9fc38fde015373e9",
+					"jsonFile" : "target-DataTarget-sommative-Box2D-Debug-b0d5c6b44b9a3c8c30d8.json",
+					"name" : "DataTarget-sommative-Box2D",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sommative-Box2D::@460b9fc38fde015373e9",
+					"jsonFile" : "target-sommative-Box2D-Debug-613c6c6129f4a897095d.json",
+					"name" : "sommative-Box2D",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug",
+		"source" : "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}
