@@ -5,7 +5,7 @@ TextureManager* TextureManager::textureManager_ = nullptr;
 TextureManager::TextureManager()
 {
     m_earthTexture.loadFromFile("./data/Terran.png");
-    m_bouncerTexture.loadFromFile("./data/Ship.png");
+    m_bouncerTexture.loadFromFile("./data/BG_8.png");
     m_backgroundTexture.loadFromFile("./data/Space Background.png");
 
 }
