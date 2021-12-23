@@ -14,10 +14,10 @@ Ball::Ball(Game& game_, sf::RenderWindow& window_) : game(game_), window(window_
 void Ball::init() {
 
     // Defining the shape
-	shape.setRadius(20.0f);
+	shape.setRadius(24.0f);
     TextureManager* texManager = TextureManager::Instance();
     m_sprite.setTexture(texManager->getEarthTexture());
-    m_sprite.setOrigin(texManager->getEarthTexture().getSize().x * 0.5f, texManager->getEarthTexture().getSize().y * 0.5f);
+    m_earth.setOrigin(texManager->getEarthTexture().getSize().x * 0.0f, texManager->getEarthTexture().getSize().y * 0.0f);
 
     // Defing the box 2D elements
     b2BodyDef bodyDef;
@@ -59,11 +59,11 @@ void Ball::update() {
     // Translate meters to pixels
     sf::Vector2f graphicPosition = Game::metersToPixels(bodyPos);
     // Set the position of the Graphic object
+    m_sprite.setPosition(graphicPosition);
 	shape.setPosition(graphicPosition);
 }
 
 void Ball::render() {
-	window.draw(shape);
     window.draw(m_sprite);
 }
 

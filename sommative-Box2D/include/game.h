@@ -14,7 +14,7 @@ public:
 	Game();
 	void init();
 	void loop();
-
+	
 	b2World& getWorld() { return world_; };
 
 	static b2Vec2 pixelsToMeters(sf::Vector2f pixels);
@@ -33,7 +33,8 @@ private:
 
 	// The physical world -------------------------------------
 	b2World world_{ b2Vec2(0.0f, -9.81f) };
-	
+
+	sf::Sprite m_sprite;
 	void addBouncer(sf::Vector2f centre, float angle, float size);
 	Ball theBall;
 	std::vector<Bouncer> bouncers;
