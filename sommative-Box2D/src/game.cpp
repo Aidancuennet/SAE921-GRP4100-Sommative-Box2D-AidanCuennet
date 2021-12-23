@@ -66,18 +66,18 @@ void Game::loop()
 				}
 			}
 
-			//if (event.type == sf::Event::MouseButtonReleased)
-			//{
-			//	if (event.mouseButton.button == sf::Mouse::Right) {
-			//		mouseReleasedPos_ball = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
-			//		sf::Vector2f velocity(mouseReleasedPos_ball.x - mousePressedPos_ball.x, mouseReleasedPos_ball.y - mousePressedPos_ball.y);
+			if (event.type == sf::Event::MouseButtonReleased)
+			{
+				if (event.mouseButton.button == sf::Mouse::Right) {
+					mouseReleasedPos_ball = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
+					sf::Vector2f velocity(mouseReleasedPos_ball.x - mousePressedPos_ball.x, mouseReleasedPos_ball.y - mousePressedPos_ball.y);
 
-			//		theBall.setPixelsPosition(sf::Vector2f(event.mouseButton.x, event.mouseButton.y), velocity);
-			//	}
+					theBall.setPixelsPosition(sf::Vector2f(event.mouseButton.x, event.mouseButton.y), velocity);
+				}
 
-			//	if (event.mouseButton.button == sf::Mouse::Left) {
-			//		// mouse Released position detect
-			//		mouseReleasedPos_bouncer = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
+				if (event.mouseButton.button == sf::Mouse::Left) {
+					// mouse Released position detect
+					mouseReleasedPos_bouncer = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
 
 					// Add a bouncer
 					Bouncer newBouncer(*this, this->window_, mousePressedPos_bouncer, mouseReleasedPos_bouncer);

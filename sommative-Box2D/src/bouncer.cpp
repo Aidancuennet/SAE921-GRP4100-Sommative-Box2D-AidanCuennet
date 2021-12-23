@@ -17,8 +17,8 @@ void Bouncer::init(sf::Vector2f center_, float angle_, float size_) {
     // 2 meters long, 0,5 meters high
     b2Vec2 physicalSize(game.pixelsToMeters(size_), 0.1f);
     shape.setSize(Game::metersToPixels(physicalSize));
-	shape.setFillColor(sf::Color::Magenta);
-	shape.setFillColor(sf::Color::Magenta);
+	shape.setFillColor(sf::Color::Blue);
+	shape.setFillColor(sf::Color::Blue);
     shape.setOrigin(0.5F * shape.getSize().x, 0.5F * shape.getSize().y);
 	
     shape.setPosition(center_);
