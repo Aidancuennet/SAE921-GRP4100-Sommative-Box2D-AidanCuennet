@@ -14,6 +14,7 @@ public:
 	void update();
 	void render();
 	void setPixelsPosition(sf::Vector2f _pixelsPosition);
+	void setPixelsPosition(const sf::Vector2f& vector2, const sf::Vector2f& velocity);
 
 private:
 	Game& game;

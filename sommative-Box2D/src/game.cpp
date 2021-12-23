@@ -80,10 +80,17 @@ void Game::loop()
 					mouseReleasedPos_bouncer = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
 
 					// Add a bouncer
-					Bouncer newBouncer(*this, this->window_, mousePressedPos_bouncer, mouseReleasedPos_bouncer);
-					bouncers.push_back(newBouncer);
+					placedBouncer newplacedBouncer(*this, this->window_, mousePressedPos_bouncer, mouseReleasedPos_bouncer);
+					bouncers.push_back(newplacedBouncer);
 				}
-
+			}
+			// Keyboard events
+			if (event.type == sf::Event::KeyReleased) {
+				if (event.key.code == sf::Keyboard::Space) {
+					clearBouncers();
+				}
+			}
+		}
 			/*window_.draw(m_sprite);
 			window_.display();*/
 		}
@@ -119,7 +126,7 @@ void Game::loop()
 
 
 	}
-}
+
 
 
 void Game::addBouncer(sf::Vector2f centre, float angle, float size)

@@ -10,6 +10,7 @@ class Bouncer
 public:
 	explicit Bouncer(Game& game_, sf::RenderWindow& window_, sf::Vector2f, float, float);
 
+
 	void init(sf::Vector2f, float, float);
 	void update();
 	void render();
