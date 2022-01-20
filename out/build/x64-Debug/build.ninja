@@ -66,7 +66,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 #############################################
 # Utility command for DataTarget-sommative-Box2D
 
-build sommative-Box2D\DataTarget-sommative-Box2D: phony sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D sommative-Box2D\data\BG_2.png sommative-Box2D\data\BG_6.png sommative-Box2D\data\BG_8.png sommative-Box2D\data\Space$ Background.png sommative-Box2D\data\Terran.png
+build sommative-Box2D\DataTarget-sommative-Box2D: phony sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D sommative-Box2D\data\GameOver.png sommative-Box2D\data\Ship.png sommative-Box2D\data\asteroid.png sommative-Box2D\data\cave.png sommative-Box2D\data\explosion.png sommative-Box2D\data\explosion\Explosion_001.png sommative-Box2D\data\explosion\Explosion_002.png sommative-Box2D\data\explosion\Explosion_003.png sommative-Box2D\data\explosion\Explosion_004.png sommative-Box2D\data\explosion\Explosion_005.png sommative-Box2D\data\explosion\Explosion_006.png sommative-Box2D\data\explosion\Explosion_007.png sommative-Box2D\data\missile.png sommative-Box2D\data\missile\missile.afdesign sommative-Box2D\data\missile\missile_0.png sommative-Box2D\data\missile\missile_1.png sommative-Box2D\data\missile\missile_2.png sommative-Box2D\data\missile\missile_3.png sommative-Box2D\data\missile\missile_4.png sommative-Box2D\data\missile\missile_5.png sommative-Box2D\data\missile\missile_6.png sommative-Box2D\data\missile\missile_7.png sommative-Box2D\data\missile\missiles.xcf sommative-Box2D\data\missile\spr_missile.png sommative-Box2D\data\missile\spr_missile_half.png sommative-Box2D\data\shipsheetparts.PNG sommative-Box2D\data\sounds\Boum.wav sommative-Box2D\data\sounds\Brr.wav sommative-Box2D\data\sounds\Piou.wav
 
 # =============================================================================
 # Object build statements for EXECUTABLE target sommative-Box2D
@@ -77,7 +77,7 @@ build sommative-Box2D\DataTarget-sommative-Box2D: phony sommative-Box2D\CMakeFil
 
 build cmake_object_order_depends_target_sommative-Box2D: phony || sommative-Box2D\DataTarget-sommative-Box2D
 
-build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\ball.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\ball.cpp || cmake_object_order_depends_target_sommative-Box2D
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\asteroid.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\asteroid.cpp || cmake_object_order_depends_target_sommative-Box2D
   DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
   INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
@@ -95,7 +95,52 @@ build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\bouncer.cpp.obj: CXX_CO
   TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
   TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
 
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\SFML_Utilities.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\core\SFML_Utilities.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\box2DEntity.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\core\box2DEntity.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\contact_listener.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\core\contact_listener.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\userData.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\core\userData.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
 build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\game.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\game.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\lifeBar.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\lifeBar.cpp || cmake_object_order_depends_target_sommative-Box2D
   DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
   INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
@@ -113,7 +158,43 @@ build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\main.cpp.obj: CXX_COMPI
   TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
   TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
 
-build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\placedBouncer.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\placedBouncer.cpp || cmake_object_order_depends_target_sommative-Box2D
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\asteroidManager.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\managers\asteroidManager.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\missileManager.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\managers\missileManager.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\soundManager.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\managers\soundManager.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\textureManager.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\managers\textureManager.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\missile.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\missile.cpp || cmake_object_order_depends_target_sommative-Box2D
   DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
   INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
@@ -122,7 +203,16 @@ build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\placedBouncer.cpp.obj: 
   TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
   TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
 
-build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\textureManager.cpp || cmake_object_order_depends_target_sommative-Box2D
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\shape.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\shape.cpp || cmake_object_order_depends_target_sommative-Box2D
+  DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
+  INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir
+  OBJECT_FILE_DIR = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src
+  TARGET_COMPILE_PDB = sommative-Box2D\CMakeFiles\sommative-Box2D.dir\
+  TARGET_PDB = sommative-Box2D\sommative-Box2D.pdb
+
+build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\ship.cpp.obj: CXX_COMPILER__sommative-Box2D_Debug ..\..\..\sommative-Box2D\src\ship.cpp || cmake_object_order_depends_target_sommative-Box2D
   DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest
   INCLUDES = -I..\..\..\sommative-Box2D\include -IC:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\include
@@ -139,7 +229,7 @@ build sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj:
 #############################################
 # Link the executable sommative-Box2D\sommative-Box2D.exe
 
-build sommative-Box2D\sommative-Box2D.exe: CXX_EXECUTABLE_LINKER__sommative-Box2D_Debug sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\ball.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\bouncer.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\game.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\main.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\placedBouncer.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\textureManager.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || sommative-Box2D\DataTarget-sommative-Box2D
+build sommative-Box2D\sommative-Box2D.exe: CXX_EXECUTABLE_LINKER__sommative-Box2D_Debug sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\asteroid.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\bouncer.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\SFML_Utilities.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\box2DEntity.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\contact_listener.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\core\userData.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\game.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\lifeBar.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\main.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\asteroidManager.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\missileManager.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\soundManager.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\managers\textureManager.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\missile.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\shape.cpp.obj sommative-Box2D\CMakeFiles\sommative-Box2D.dir\src\ship.cpp.obj | C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib C$:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib || sommative-Box2D\DataTarget-sommative-Box2D
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-audio-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\manual-link\sfml-main-d.lib  C:\Users\coyli\OneDrive\Documents\vcpkg\installed\x64-windows\debug\lib\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -178,51 +268,267 @@ build sommative-Box2D\rebuild_cache: phony sommative-Box2D\CMakeFiles\rebuild_ca
 #############################################
 # Phony custom command for sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D
 
-build sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D: phony sommative-Box2D\data\BG_2.png sommative-Box2D\data\BG_6.png sommative-Box2D\data\BG_8.png sommative-Box2D\data\Space$ Background.png sommative-Box2D\data\Terran.png ..\..\..\sommative-Box2D\data\BG_2.png ..\..\..\sommative-Box2D\data\BG_6.png ..\..\..\sommative-Box2D\data\BG_8.png ..\..\..\sommative-Box2D\data\Space$ Background.png ..\..\..\sommative-Box2D\data\Terran.png
+build sommative-Box2D\CMakeFiles\DataTarget-sommative-Box2D: phony sommative-Box2D\data\GameOver.png sommative-Box2D\data\Ship.png sommative-Box2D\data\asteroid.png sommative-Box2D\data\cave.png sommative-Box2D\data\explosion.png sommative-Box2D\data\explosion\Explosion_001.png sommative-Box2D\data\explosion\Explosion_002.png sommative-Box2D\data\explosion\Explosion_003.png sommative-Box2D\data\explosion\Explosion_004.png sommative-Box2D\data\explosion\Explosion_005.png sommative-Box2D\data\explosion\Explosion_006.png sommative-Box2D\data\explosion\Explosion_007.png sommative-Box2D\data\missile.png sommative-Box2D\data\missile\missile.afdesign sommative-Box2D\data\missile\missile_0.png sommative-Box2D\data\missile\missile_1.png sommative-Box2D\data\missile\missile_2.png sommative-Box2D\data\missile\missile_3.png sommative-Box2D\data\missile\missile_4.png sommative-Box2D\data\missile\missile_5.png sommative-Box2D\data\missile\missile_6.png sommative-Box2D\data\missile\missile_7.png sommative-Box2D\data\missile\missiles.xcf sommative-Box2D\data\missile\spr_missile.png sommative-Box2D\data\missile\spr_missile_half.png sommative-Box2D\data\shipsheetparts.PNG sommative-Box2D\data\sounds\Boum.wav sommative-Box2D\data\sounds\Brr.wav sommative-Box2D\data\sounds\Piou.wav ..\..\..\sommative-Box2D\data\GameOver.png ..\..\..\sommative-Box2D\data\Ship.png ..\..\..\sommative-Box2D\data\asteroid.png ..\..\..\sommative-Box2D\data\cave.png ..\..\..\sommative-Box2D\data\explosion.png ..\..\..\sommative-Box2D\data\explosion\Explosion_001.png ..\..\..\sommative-Box2D\data\explosion\Explosion_002.png ..\..\..\sommative-Box2D\data\explosion\Explosion_003.png ..\..\..\sommative-Box2D\data\explosion\Explosion_004.png ..\..\..\sommative-Box2D\data\explosion\Explosion_005.png ..\..\..\sommative-Box2D\data\explosion\Explosion_006.png ..\..\..\sommative-Box2D\data\explosion\Explosion_007.png ..\..\..\sommative-Box2D\data\missile.png ..\..\..\sommative-Box2D\data\missile\missile.afdesign ..\..\..\sommative-Box2D\data\missile\missile_0.png ..\..\..\sommative-Box2D\data\missile\missile_1.png ..\..\..\sommative-Box2D\data\missile\missile_2.png ..\..\..\sommative-Box2D\data\missile\missile_3.png ..\..\..\sommative-Box2D\data\missile\missile_4.png ..\..\..\sommative-Box2D\data\missile\missile_5.png ..\..\..\sommative-Box2D\data\missile\missile_6.png ..\..\..\sommative-Box2D\data\missile\missile_7.png ..\..\..\sommative-Box2D\data\missile\missiles.xcf ..\..\..\sommative-Box2D\data\missile\spr_missile.png ..\..\..\sommative-Box2D\data\missile\spr_missile_half.png ..\..\..\sommative-Box2D\data\shipsheetparts.PNG ..\..\..\sommative-Box2D\data\sounds\Boum.wav ..\..\..\sommative-Box2D\data\sounds\Brr.wav ..\..\..\sommative-Box2D\data\sounds\Piou.wav
 
 
 #############################################
-# Custom command for sommative-Box2D\data\BG_2.png
+# Custom command for sommative-Box2D\data\GameOver.png
 
-build sommative-Box2D\data\BG_2.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\BG_2.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/BG_2.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_2.png"
-  DESC = Generating data/BG_2.png
+build sommative-Box2D\data\GameOver.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\GameOver.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/GameOver.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/GameOver.png"
+  DESC = Generating data/GameOver.png
   restat = 1
 
 
 #############################################
-# Custom command for sommative-Box2D\data\BG_6.png
+# Custom command for sommative-Box2D\data\Ship.png
 
-build sommative-Box2D\data\BG_6.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\BG_6.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/BG_6.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_6.png"
-  DESC = Generating data/BG_6.png
+build sommative-Box2D\data\Ship.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\Ship.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/Ship.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Ship.png"
+  DESC = Generating data/Ship.png
   restat = 1
 
 
 #############################################
-# Custom command for sommative-Box2D\data\BG_8.png
+# Custom command for sommative-Box2D\data\asteroid.png
 
-build sommative-Box2D\data\BG_8.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\BG_8.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/BG_8.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/BG_8.png"
-  DESC = Generating data/BG_8.png
+build sommative-Box2D\data\asteroid.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\asteroid.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/asteroid.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/asteroid.png"
+  DESC = Generating data/asteroid.png
   restat = 1
 
 
 #############################################
-# Custom command for sommative-Box2D\data\Space Background.png
+# Custom command for sommative-Box2D\data\cave.png
 
-build sommative-Box2D\data\Space$ Background.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\Space$ Background.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/Space Background.png" "C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Space Background.png""
-  DESC = Generating data/Space Background.png
+build sommative-Box2D\data\cave.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\cave.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/cave.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/cave.png"
+  DESC = Generating data/cave.png
   restat = 1
 
 
 #############################################
-# Custom command for sommative-Box2D\data\Terran.png
+# Custom command for sommative-Box2D\data\explosion.png
 
-build sommative-Box2D\data\Terran.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\Terran.png
-  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/Terran.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/Terran.png"
-  DESC = Generating data/Terran.png
+build sommative-Box2D\data\explosion.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion.png"
+  DESC = Generating data/explosion.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_001.png
+
+build sommative-Box2D\data\explosion\Explosion_001.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_001.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_001.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_001.png"
+  DESC = Generating data/explosion/Explosion_001.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_002.png
+
+build sommative-Box2D\data\explosion\Explosion_002.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_002.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_002.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_002.png"
+  DESC = Generating data/explosion/Explosion_002.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_003.png
+
+build sommative-Box2D\data\explosion\Explosion_003.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_003.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_003.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_003.png"
+  DESC = Generating data/explosion/Explosion_003.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_004.png
+
+build sommative-Box2D\data\explosion\Explosion_004.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_004.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_004.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_004.png"
+  DESC = Generating data/explosion/Explosion_004.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_005.png
+
+build sommative-Box2D\data\explosion\Explosion_005.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_005.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_005.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_005.png"
+  DESC = Generating data/explosion/Explosion_005.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_006.png
+
+build sommative-Box2D\data\explosion\Explosion_006.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_006.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_006.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_006.png"
+  DESC = Generating data/explosion/Explosion_006.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\explosion\Explosion_007.png
+
+build sommative-Box2D\data\explosion\Explosion_007.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\explosion\Explosion_007.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/explosion/Explosion_007.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/explosion/Explosion_007.png"
+  DESC = Generating data/explosion/Explosion_007.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile.png
+
+build sommative-Box2D\data\missile.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile.png"
+  DESC = Generating data/missile.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile.afdesign
+
+build sommative-Box2D\data\missile\missile.afdesign: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile.afdesign
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile.afdesign C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile.afdesign"
+  DESC = Generating data/missile/missile.afdesign
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_0.png
+
+build sommative-Box2D\data\missile\missile_0.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_0.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_0.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_0.png"
+  DESC = Generating data/missile/missile_0.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_1.png
+
+build sommative-Box2D\data\missile\missile_1.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_1.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_1.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_1.png"
+  DESC = Generating data/missile/missile_1.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_2.png
+
+build sommative-Box2D\data\missile\missile_2.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_2.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_2.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_2.png"
+  DESC = Generating data/missile/missile_2.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_3.png
+
+build sommative-Box2D\data\missile\missile_3.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_3.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_3.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_3.png"
+  DESC = Generating data/missile/missile_3.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_4.png
+
+build sommative-Box2D\data\missile\missile_4.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_4.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_4.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_4.png"
+  DESC = Generating data/missile/missile_4.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_5.png
+
+build sommative-Box2D\data\missile\missile_5.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_5.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_5.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_5.png"
+  DESC = Generating data/missile/missile_5.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_6.png
+
+build sommative-Box2D\data\missile\missile_6.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_6.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_6.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_6.png"
+  DESC = Generating data/missile/missile_6.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missile_7.png
+
+build sommative-Box2D\data\missile\missile_7.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missile_7.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missile_7.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missile_7.png"
+  DESC = Generating data/missile/missile_7.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\missiles.xcf
+
+build sommative-Box2D\data\missile\missiles.xcf: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\missiles.xcf
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/missiles.xcf C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/missiles.xcf"
+  DESC = Generating data/missile/missiles.xcf
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\spr_missile.png
+
+build sommative-Box2D\data\missile\spr_missile.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\spr_missile.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/spr_missile.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/spr_missile.png"
+  DESC = Generating data/missile/spr_missile.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\missile\spr_missile_half.png
+
+build sommative-Box2D\data\missile\spr_missile_half.png: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\missile\spr_missile_half.png
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/missile/spr_missile_half.png C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/missile/spr_missile_half.png"
+  DESC = Generating data/missile/spr_missile_half.png
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\shipsheetparts.PNG
+
+build sommative-Box2D\data\shipsheetparts.PNG: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\shipsheetparts.PNG
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/shipsheetparts.PNG C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/shipsheetparts.PNG"
+  DESC = Generating data/shipsheetparts.PNG
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\sounds\Boum.wav
+
+build sommative-Box2D\data\sounds\Boum.wav: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\sounds\Boum.wav
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/sounds/Boum.wav C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/sounds/Boum.wav"
+  DESC = Generating data/sounds/Boum.wav
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\sounds\Brr.wav
+
+build sommative-Box2D\data\sounds\Brr.wav: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\sounds\Brr.wav
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/sounds/Brr.wav C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/sounds/Brr.wav"
+  DESC = Generating data/sounds/Brr.wav
+  restat = 1
+
+
+#############################################
+# Custom command for sommative-Box2D\data\sounds\Piou.wav
+
+build sommative-Box2D\data\sounds\Piou.wav: CUSTOM_COMMAND ..\..\..\sommative-Box2D\data\sounds\Piou.wav
+  COMMAND = cmd.exe /C "cd /D C:\Users\coyli\SAE921-GRP4100-Sommative-Box2D-AidanCuennet\out\build\x64-Debug\sommative-Box2D && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/sommative-Box2D/data/sounds/Piou.wav C:/Users/coyli/SAE921-GRP4100-Sommative-Box2D-AidanCuennet/out/build/x64-Debug/sommative-Box2D/data/sounds/Piou.wav"
+  DESC = Generating data/sounds/Piou.wav
   restat = 1
 
 # =============================================================================

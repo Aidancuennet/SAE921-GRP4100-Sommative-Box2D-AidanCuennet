@@ -4,7 +4,7 @@
 
 #include "SFML/Graphics/RenderWindow.hpp"
 #include "box2d/b2_world.h"
-
+#include "managers/textureManager.h"
 #include "bouncer.h"
 #include "lifeBar.h"
 #include "ship.h"

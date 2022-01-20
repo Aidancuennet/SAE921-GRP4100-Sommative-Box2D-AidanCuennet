@@ -1,0 +1,12 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "sommative-Box2D.exe (sommative-Box2D\\sommative-Box2D.exe)",
+      "name": "sommative-Box2D.exe (sommative-Box2D\\sommative-Box2D.exe)"
+    }
+  ]
+}
