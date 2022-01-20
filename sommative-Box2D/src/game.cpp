@@ -15,18 +15,18 @@ void Game::init() {
 	//TextureManager* texManager = TextureManager::Instance();
 	//m_sprite.setTexture(texManager->getBackgroundTexture());
 	//m_sprite.setOrigin(texManager->getBackgroundTexture().getSize().x * 2.0f, texManager->getBackgroundTexture().getSize().y * 2.0f);
-	
+
 	addBouncer(sf::Vector2f(100, 360), 45, 200);
 	addBouncer(sf::Vector2f(380, 230), 45, 200);
 	addBouncer(sf::Vector2f(400, 660), 45, 200);
 	addBouncer(sf::Vector2f(1000, 560), 90, 200);
 
 
-	
-	
+
+
 	// Init all elements
 	theBall.init();
-	}
+}
 
 void Game::loop()
 {
@@ -49,22 +49,17 @@ void Game::loop()
 				auto view = window_.getView();
 				view.setSize(event.size.width, event.size.height);
 				window_.setView(view);
-				
-				
+
+
 			}
+
 
 			// Mouse events ---------------------------------------------------------------------------------
 			if (event.type == sf::Event::MouseButtonReleased)
 			{
 				theBall.setPixelsPosition(sf::Vector2f(event.mouseButton.x, event.mouseButton.y));
 			}
-			// Keyboard events
-			if (event.type == sf::Event::KeyReleased) {
-				if (event.key.code == sf::Keyboard::Space) {
-					clearBouncers();
-				}
-			}
-		}
+
 			/*window_.draw(m_sprite);
 			window_.display();*/
 		}
@@ -94,13 +89,13 @@ void Game::loop()
 		for (auto b = bouncers.begin(); b != bouncers.end(); b++) {
 			b->render();
 		}
-		
+
 		// Display all elements
 		window_.display();
 
 
 	}
-
+}
 
 
 void Game::addBouncer(sf::Vector2f centre, float angle, float size)

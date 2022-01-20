@@ -9,7 +9,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS On)
 message("START CMAKE " ${EXECUTABLE_CUSTOM_NAME})
 
 file(GLOB_RECURSE DATA_FILES data/*)
-source_group("Data/" FILES ${DATA_FILES})
+source_group("data/" FILES ${DATA_FILES})
 foreach(DATA ${DATA_FILES})
     get_filename_component(FILE_NAME ${DATA} NAME)
     get_filename_component(PATH_NAME ${DATA} DIRECTORY)
@@ -36,7 +36,7 @@ include_directories(include/)
 
 file(GLOB_RECURSE PLATFORMER_SRC src/*.cpp include/*.h)
 
-add_executable(${EXECUTABLE_CUSTOM_NAME} ${PLATFORMER_SRC} )
+add_executable(${EXECUTABLE_CUSTOM_NAME} ${PLATFORMER_SRC})
 add_dependencies(${EXECUTABLE_CUSTOM_NAME} DataTarget-${EXECUTABLE_CUSTOM_NAME})
 target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE sfml-graphics sfml-audio sfml-window sfml-system)
 

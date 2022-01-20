@@ -1,47 +1,66 @@
 #pragma once
 
+#include <vector>
+
 #include "SFML/Graphics/RenderWindow.hpp"
-#include "SFML/Graphics/Texture.hpp"
-#include "SFML/Window//Event.hpp"
 #include "box2d/b2_world.h"
 
-
 #include "bouncer.h"
-#include "ball.h"
+#include "lifeBar.h"
+#include "ship.h"
+#include "core/contact_listener.h"
+#include "managers/missileManager.h"
+#include "managers/asteroidManager.h"
 
-class Game{
+class Game {
+
 public:
-	
 	Game();
 	void init();
 	void loop();
-	
-	b2World& getWorld() { return world_; };
 
-	static b2Vec2 pixelsToMeters(sf::Vector2f pixels);
-	static b2Vec2 pixelsToMeters(sf::Vector2u pixels);
-	static float pixelsToMeters(float pixels);
+	b2World& getWorld() { return m_world; };
+	Ship& getShip() { return m_ship; };
 
-	static sf::Vector2f metersToPixels(b2Vec2 meters);
+	void setDamagesToShip(float damages_);
+	void putAsteroidToDeath(int idAsteroid_);
+	void putMissileToDeath(int idMissile_);
 
-	static const float pixelsMetersRatio;
 
 private:
 
-	
-	
+	bool m_debugMode;
+	bool m_gameOver = false;
+
 	// The window ---------------------------------------------
-	sf::RenderWindow window_;
+	sf::RenderWindow m_window;
+
+	// Sounds
+	SoundManager* m_soundManager = SoundManager::Instance();
 
 	// The physical world -------------------------------------
-	b2World world_{ b2Vec2(0.0f, -9.81f) };
+	b2Vec2 m_gravity;
+	b2World m_world;
+	std::vector<std::unique_ptr<Bouncer>> m_windowLimits;
+	MyContactListener m_contacts;
 
 
-	sf::Vector2f mousePressedPos_bouncer, mouseReleasedPos_bouncer;
-	sf::Vector2f mousePressedPos_ball, mouseReleasedPos_ball;
-	sf::Sprite m_sprite;
-	void addBouncer(sf::Vector2f centre, float angle, float size);
-	Ball theBall;
-	std::vector<Bouncer> bouncers;
-	void clearBouncers();
+	// The game entities --------------------------------------
+	Ship m_ship;
+	AsteroidManager m_asteroidManager;
+	MissileManager m_missileManager;
+
+	// The ui entities
+	LifeBar m_lifeBar = LifeBar(100.0f);
+	sf::Sprite m_gameOverTitle;
+
+	sf::Clock clock;
+	sf::Time collectedElapsed;
+
+	void update();
+	void draw();
+
+	void call(int i);
+
+
 };

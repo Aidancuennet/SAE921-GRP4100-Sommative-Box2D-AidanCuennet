@@ -3,29 +3,18 @@
 #include "SFML/Graphics.hpp"
 #include "box2d/box2d.h"
 
+#include "core/box2DEntity.h"
+#include "core/userData.h"
+
 class Game;
 
-class Bouncer
+class Bouncer : public Box2DEntity
 {
 public:
-	explicit Bouncer(Game& game_, sf::RenderWindow& window_, sf::Vector2f, float, float);
+	explicit Bouncer(b2World& world_, sf::Vector2f pos_, sf::Vector2f size_);
+	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
-
-	void init(sf::Vector2f, float, float);
-	void update();
-	void render();
-
-	b2Body* getBody(){ return body; };
-
-private:
-	// Root game
-	Game& game;
-	// Graphic object
-	sf::RectangleShape shape;
-	sf::ConvexShape boxShape;
-	// The SFMl Window
-	sf::RenderWindow& window;
-	// The box 2D object
-	b2Body* body = nullptr;
+protected:
+	void createFixture(const float sizeX, const float sizeY) override;
 
 };
