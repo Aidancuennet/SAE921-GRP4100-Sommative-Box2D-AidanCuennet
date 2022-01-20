@@ -44,6 +44,10 @@ private:
 	std::vector<std::unique_ptr<Bouncer>> m_windowLimits;
 	MyContactListener m_contacts;
 
+	sf::Sprite m_sprite;
+	void addPlatform(sf::Vector2f centre, float angle, float size);
+	std::vector<Bouncer> platforms;
+	void clearPlatforms();
 
 	// The game entities --------------------------------------
 	Ship m_ship;

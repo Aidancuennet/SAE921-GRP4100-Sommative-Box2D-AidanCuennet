@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-#include "managers/textureManager.h"
+#include "managers\textureManager.h"
 
 Game::Game() :
 	m_gravity(0.0f, 0.0f),
@@ -30,7 +30,11 @@ void Game::init() {
 	m_gameOverTitle.setTexture(texture_manager->getGameOverTexture());
 	m_gameOverTitle.setOrigin(0.5f * texture_manager->getGameOverTexture().getSize().x, 0.5f * texture_manager->getGameOverTexture().getSize().y);
 	m_gameOverTitle.setPosition(0.5f * m_window.getSize().x, 0.5f * m_window.getSize().y);
-
+	//add platforms as obstacles
+	addPlatform(sf::Vector2f(100, 360), 45, 200);
+	addPlatform(sf::Vector2f(380, 230), 45, 200);
+	addPlatform(sf::Vector2f(400, 660), 45, 200);
+	addPlatform(sf::Vector2f(1000, 560), 90, 200);
 	// Add a bouncer
 // TOP LIMIT -------------------------------------------
 	m_windowLimits.push_back(
